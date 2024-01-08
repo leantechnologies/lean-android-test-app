@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E0E0E0"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/customerIdInitEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="customer-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteCustomerId1Button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/customerIdInitEditText"
+                    android:layout_alignRight="@+id/customerIdInitEditText"
+                    android:layout_alignBottom="@+id/customerIdInitEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <EditText
+                    android:id="@+id/bankIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerIdInitEditText"
+                    android:hint="bank-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteBankIdButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/bankIdEditText"
+                    android:layout_alignRight="@+id/bankIdEditText"
+                    android:layout_alignBottom="@+id/bankIdEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <Button
+                    android:id="@+id/startButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/bankIdEditText"
+                    android:layout_weight="1"
+                    android:text="Link" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/customerIdConnectEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="customer-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteCustomerId2Button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/customerIdConnectEditText"
+                    android:layout_alignRight="@+id/customerIdConnectEditText"
+                    android:layout_alignBottom="@+id/customerIdConnectEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <EditText
+                    android:id="@+id/bankIdConnectEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/customerIdConnectEditText"
+                    android:hint="bank-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteBankId2Button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/bankIdConnectEditText"
+                    android:layout_alignRight="@+id/bankIdConnectEditText"
+                    android:layout_alignBottom="@+id/bankIdConnectEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <EditText
+                    android:id="@+id/paymentDestinationConnectEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bankIdConnectEditText"
+                    android:hint="Payment Destination ID"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pastePaymentDestination2Button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/paymentDestinationConnectEditText"
+                    android:layout_alignRight="@+id/paymentDestinationConnectEditText"
+                    android:layout_alignBottom="@+id/paymentDestinationConnectEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <Button
+                    android:id="@+id/connectButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/paymentDestinationConnectEditText"
+                    android:layout_weight="1"
+                    android:text="Connect" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/reconnectIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="reconnect-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteReconnectId1Button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/reconnectIdEditText"
+                    android:layout_alignRight="@+id/reconnectIdEditText"
+                    android:layout_alignBottom="@+id/reconnectIdEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <Button
+                    android:id="@+id/reconnectButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/reconnectIdEditText"
+                    android:layout_weight="1"
+                    android:text="Reconnect" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/customerIdCBEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="customer-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteCustomerIdCBButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/customerIdCBEditText"
+                    android:layout_alignRight="@+id/customerIdCBEditText"
+                    android:layout_alignBottom="@+id/customerIdCBEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <EditText
+                    android:id="@+id/paymentSourceIdCBEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pasteCustomerIdCBButton"
+                    android:hint="payment-source-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pastePaymentSourceIdCBButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/paymentSourceIdCBEditText"
+                    android:layout_alignRight="@+id/paymentSourceIdCBEditText"
+                    android:layout_alignBottom="@+id/paymentSourceIdCBEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <EditText
+                    android:id="@+id/paymentDestinationIdCBEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pastePaymentSourceIdCBButton"
+                    android:hint="payment-destination-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pastePaymentDestinationIdCBButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/paymentDestinationIdCBEditText"
+                    android:layout_alignRight="@+id/paymentDestinationIdCBEditText"
+                    android:layout_alignBottom="@+id/paymentDestinationIdCBEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <Button
+                    android:id="@+id/createBeneficiaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/paymentDestinationIdCBEditText"
+                    android:layout_weight="1"
+                    android:text="Create Beneficiary" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:id="@+id/showBalancesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="4dp"
+                        android:text="Show balances"
+                        android:textSize="18sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/showBalanceSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/paymentIntentIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/showBalancesLayout"
+                    android:layout_marginTop="8dp"
+                    android:hint="payment-intent-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pastePaymentIdButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/paymentIntentIdEditText"
+                    android:layout_alignRight="@+id/paymentIntentIdEditText"
+                    android:layout_alignBottom="@+id/paymentIntentIdEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <EditText
+                    android:id="@+id/accountIdEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/paymentIntentIdEditText"
+                    android:hint="account-id"
+                    android:paddingRight="40dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/pasteAccountIdButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/accountIdEditText"
+                    android:layout_alignRight="@+id/accountIdEditText"
+                    android:layout_alignBottom="@+id/accountIdEditText"
+                    android:padding="7dp"
+                    app:srcCompat="@drawable/ic_paste"
+                    app:tint="#424242" />
+
+                <Button
+                    android:id="@+id/startPayButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/accountIdEditText"
+                    android:layout_weight="1"
+                    android:text="Pay" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
